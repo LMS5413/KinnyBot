@@ -1,0 +1,46 @@
+{
+  "name": "kinnybot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/voice": "^0.6.0",
+    "axios": "^0.21.1",
+    "canvas": "^2.8.0",
+    "colors.js": "^1.2.4",
+    "dicionario.js": "^1.0.7",
+    "discord.js": "^13.6.0",
+    "epic-free-games": "^2.1.4",
+    "express": "^4.17.1",
+    "fastest-levenshtein": "^1.0.12",
+    "heroku": "^7.2.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.5",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "opusscript": "0.0.7",
+    "parse-ms": "^2.1.0",
+    "probability-distributions": "^0.9.1",
+    "puppeteer": "^10.2.0",
+    "search-npm-registry": "^2.0.3",
+    "shelljs": "^0.8.4",
+    "simpl.db": "^2.1.0",
+    "sourcebin": "^3.2.5",
+    "systeminformation": "^5.8.0",
+    "top.gg": "^2.3.2",
+    "vulkava": "^1.2.4",
+    "youtube-mp3-converter": "^1.0.3",
+    "yt-search": "^2.10.0",
+    "ytdl-core": "^4.11.0"
+  },
+  "devDependencies": {
+    "form-data": "^4.0.0"
+  }
+}

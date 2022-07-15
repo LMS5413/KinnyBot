@@ -1,0 +1,33 @@
+{
+    "pt": {
+        "noJornal": "Você não tem um jornal",
+        "existente": "Esse jornal já existe!",
+        "naoexistente": "Esse jornal não existe!",
+        "noName": "Digite o nome do jornal!",
+        "sucess": "Foi criado um jornal com o nome name na linguagem lang",
+        "naoedono": "Apenas o dono do jornal pode executar isso.",
+        "nomemateria": "Nome da materia",
+        "materia": "Materia",
+        "jornal": "Jornal:",
+        "autor": "Autor do jornal:",
+        "offlineserver": "O servidor se encontra offline",
+        "noJornalista": "Você não é o jornalista dessa empresa",
+        "noMatter": "Sem materias"
+    },
+    "en": {
+        "noJornal": "you don't have a newspaper",
+        "existente": "This newspaper already exists!",
+        "naoexistente": "This newspaper does not exist!",
+        "noName": "Enter the name of the newspaper!",
+        "sucess": "A newspaper was created with the name name in lang language",
+        "naoedono": "Only the newspaper owner can do this.",
+        "nomemateria": "Subject Name",
+        "jornal": "Newspaper:",
+        "materia": "Matter",
+        "autor": "Journal author:",
+        "offlineserver": "The server is offline",
+        "noJornalista": "You are not the journalist of this company",
+        "noMatter": "No matters"
+        
+    }
+}

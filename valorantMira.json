@@ -1,0 +1,44 @@
+[
+    {
+        "time": "Ninjas in Pyjamas",
+        "player": "bezn",
+        "image": "https://i0.wp.com/theclutch.com.br/wp-content/uploads/2022/04/bezn-nip.jpg",
+        "code": "0;P;h;0;0b;0;1l;4;1o;2;1a;1;1m;0;1f;0",
+        "font": "https://theclutch.com.br/valorant/lista-miras-jogadores-profissionais/"
+    },
+    {
+        "time": "Ninjas in Pyjamas",
+        "player": "bjn",
+        "image": "https://i0.wp.com/theclutch.com.br/wp-content/uploads/2022/04/bnj-nip.jpg",
+        "code": "0;P;c;1;h;0;d;1;z;1;m;1;0t;1;0l;2;0o;2;0a;1;0e;0.316;1b;0",
+        "font": "https://theclutch.com.br/valorant/lista-miras-jogadores-profissionais/"
+    },
+    {
+        "time": "Ninjas in Pyjamas",
+        "player": "cauanzin",
+        "image": "https://i0.wp.com/theclutch.com.br/wp-content/uploads/2022/04/cauanzin-nip.jpg",
+        "code": "0;P;h;0;0l;3;0a;1;0f;0;1b;0",
+        "font": "https://theclutch.com.br/valorant/lista-miras-jogadores-profissionais/"
+    },
+    {
+        "time": "Ninjas in Pyjamas",
+        "player": "xand",
+        "image": "https://i0.wp.com/theclutch.com.br/wp-content/uploads/2022/04/xand-nip.jpg",
+        "code": "0;s;1;P;c;1;o;1;f;0;0t;1;0l;3;0o;1;0a;1;0f;0;1b;0;S;c;5;s;0.8;o;1",
+        "font": "https://theclutch.com.br/valorant/lista-miras-jogadores-profissionais/"
+    },
+    {
+        "time": "LOUD",
+        "player": "Saadhak",
+        "image": "https://i0.wp.com/theclutch.com.br/wp-content/uploads/2022/04/saadhak-loud.jpg",
+        "code": "0;P;c;1;o;1;f;0;0l;4;0o;2;0a;1;0f;0;1b;0",
+        "font": "https://theclutch.com.br/valorant/lista-miras-jogadores-profissionais/"
+    },
+    {
+        "time": "LOUD",
+        "player": "aspas",
+        "image": "https://i0.wp.com/theclutch.com.br/wp-content/uploads/2022/04/aspas-loud-1.jpg",
+        "code": "0;P;c;5;o;1;d;1;z;3;f;0;0b;0;1b;0",
+        "font": "https://theclutch.com.br/valorant/lista-miras-jogadores-profissionais/"
+    }
+]

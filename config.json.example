@@ -1,0 +1,15 @@
+{
+  "prefix": "k.",
+  "token": "",
+  "tokenc": "",
+  "tokenAPI": "",
+  "creatorid": "425775842371829760",
+  "fortApiKey": "",
+  "spotify": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "nodesLava": []
+  "webhookPasswordTopGG": "",
+  "mongodburi": ""
+}
