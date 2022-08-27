@@ -58,13 +58,14 @@ module.exports = {
 async function convert(message, collection, videos, client) {
     if (!videos) {
         collection.set(`{convert: {id: ${message.user.id}}}`, { converting: false })
-        return message.channel.send('Não existe essa musica! Se está digitando o link digite apenas o nome!')
+        if(message.replied) message.channel.send('Não existe essa musica! Se está digitando o link digite apenas o nome!')
+        else message.reply('Não existe essa musica! Se está digitando o link digite apenas o nome!')
     }
     const embed = new MessageEmbed()
         .setColor('#9900f8')
         .setTitle(`${client.user.username} - Música`)
-        .setDescription('<:config:806875469173620771> Iniciando a conversão')
-    message.channel.send({ embeds: [embed], fetchReply: true }).then(async msg => {
+        .setDescription('<:config:806875469173620771> Iniciando a conversão');
+    (message.replied ? message.channel.send({ embeds: [embed] }):message.reply({ embeds: [embed], fetchReply: true })).then(async msg => {
         if (videos.duration.seconds > 90000) {
             const embed = new MessageEmbed()
                 .setColor('#9900f8')
