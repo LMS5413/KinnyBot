@@ -21,7 +21,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                     .setColor('#9900f8')
                     .setTitle(`${client.user.username} - Cooldowns`)
-                    .addFields
+                    .addField('Daily', 'O k.daily foi liberado!')
                     .addField('Daily', 'O k.daily foi liberado!')
                     .addField('Apostar', 'O k.apostar foi liberado!')
                     .addField('Cassino', 'O k.cassino foi liberado!')
