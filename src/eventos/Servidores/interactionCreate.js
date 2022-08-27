@@ -37,6 +37,7 @@ module.exports = async (client, interaction) => {
                 const embed = new MessageEmbed()
                     .setTitle('Um erro ocorreu ao tentar executar um comando')
                     .setDescription(`Comando ${interaction.commandName}\nSlash? Sim\nErro: ${error.message}\nAutor: ${interaction.user.username}`);
+                    console.log(error)
 
                 client.channels.cache.get('873719017616068638')?.send({ embeds: [embed] });
 

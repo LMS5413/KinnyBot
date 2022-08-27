@@ -29,7 +29,7 @@ module.exports = {
 
             const bannerEmbed = new MessageEmbed()
                 .setTitle(`${client.user.username} - Banner`)
-                .setColor((banner.accent_color >>> 0).toString(16))
+                .setColor((banner.accent_color >>> 0).toString(16).padStart(6, '0'))
                 .setDescription(`Banner de ${user}.`)
                 .setImage('attachment://banner.png');
 
