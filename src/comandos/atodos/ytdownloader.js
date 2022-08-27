@@ -3,7 +3,6 @@ const yts = require("yt-search")
 const db = require('../../../db')
 const { MessageEmbed, Collection } = require('discord.js')
 const collection = new Collection()
-const { spawn } = require('child_process')
 const fs = require('fs')
 module.exports = {
     config: {

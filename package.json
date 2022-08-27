@@ -20,7 +20,6 @@
     "epic-free-games": "^2.1.4",
     "express": "^4.17.1",
     "fastest-levenshtein": "^1.0.12",
-    "ffmpeg": "^0.0.4",
     "heroku": "^7.2.0",
     "moment": "^2.29.1",
     "mongoose": "^5.13.5",
