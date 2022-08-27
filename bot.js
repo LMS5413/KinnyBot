@@ -23,7 +23,7 @@ const client = new Client({
     partials: ['CHANNEL', 'MESSAGE'],
     ws: {
         properties: {
-            $browser: "Discord iOS"
+            browser: "Discord iOS"
         }
     }
 });
