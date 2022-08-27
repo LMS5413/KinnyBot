@@ -19,7 +19,9 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setColor('#9900f8')
-            .addField(`${client.user.username} - 8Ball`, `**Pergunta:** ${pergunta}\n\n**Resposta:** ${resposta}`);
+            .addFields([
+                {name: `${client.user.username} - 8Ball`, value: `**Pergunta:** ${pergunta}\n\n**Resposta:** ${resposta}`}
+            ]);
         interaction.reply({ embeds: [embed] });
     },
 };

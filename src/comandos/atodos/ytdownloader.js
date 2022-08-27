@@ -100,11 +100,13 @@ async function convert(message, collection, videos, client) {
                     name: `music-${str}.mp3`
                 }]
             }).catch(error => {
+                collection.set(`{convert: {id: ${message.user.id}}}`, { converting: false, code: collection.get(`{convert: {id: ${message.user.id}}}`).code })
                 message.channel.send('Ocorreu um erro ao tentar enviar a musica! Fale com LMS5413 sobre o ocorrido')
                 client.channels.cache.get('873719017616068638').send(`Erro ao converter uma musica na guilda ${message.guild.username}! Erro: ${error.message} \nUser: ${message.user.username}`)
             }).then(res => fs.unlinkSync(`./src/musics/${str}.mp3`))
         })
         stream.on('error', (error) => {
+            collection.set(`{convert: {id: ${message.user.id}}}`, { converting: false, code: collection.get(`{convert: {id: ${message.user.id}}}`).code })
             message.channel.send('Ocorreu um erro ao tentar enviar a musica! Fale com LMS5413 sobre o ocorrido')
             client.channels.cache.get('873719017616068638').send(`Erro ao converter uma musica na guilda ${message.guild.username}! Erro: ${error.message} \nUser: ${message.user.username}`)
         })
