@@ -17,8 +17,6 @@ module.exports = {
         }],
     },
     run: async (client, message, args) => {
-        let premi = await db.premi.findOne({ groupid: message.user.id })
-        if (!premi) return message.reply(`${client.user.username} - Erro \n Esse comando é para pessoas que possui o Kinny Premium. Quer ter desbloqueado? Compre o kinny premium!`)
         let creating = collection.get(`{convert: {id: ${message.user.id}}}`)
         if (!creating) {
             collection.set(`{convert: {id: ${message.user.id}}}`, { converting: false })
