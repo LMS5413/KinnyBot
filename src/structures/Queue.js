@@ -5,9 +5,7 @@ module.exports = class Queue extends DefaultQueue {
     super();
   }
 
-  peek(type) {
-     console.log(this.tracks)
-     if (type === "actual") return this.tracks[0]
+  peek() {
      return this.tracks
   }
 }
