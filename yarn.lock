@@ -4832,10 +4832,10 @@ undefsafe@^2.0.5:
   resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.5.tgz#38733b9327bdcd226db889fb723a6efd162e6e2c"
   integrity sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==
 
-undici@^5.0.0:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-5.1.1.tgz#356427b0d1f032ca4cf85537b1e1694a52090438"
-  integrity sha512-CmK9JzLSMGx+2msOao8LhkKn3J7eKo2M50v0KZQ2XbiHcGqLS1HiIj01ceIm3jbUYlspw/FTSb6nMdSNyvVyaQ==
+undici@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.10.0.tgz#dd9391087a90ccfbd007568db458674232ebf014"
+  integrity sha512-c8HsD3IbwmjjbLvoZuRI26TZic+TSEe8FPMLLOkN1AfYRhdjnKBU6yL+IwcSCbdZiX4e5t0lfMDLDCqj4Sq70g==
 
 unique-string@^2.0.0:
   version "2.0.0"
@@ -4949,13 +4949,13 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vulkava@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/vulkava/-/vulkava-1.2.4.tgz#46856d30af25834a2f2a45f5c50480d58006e4ce"
-  integrity sha512-fh0BuRh0pZMEA/GqvPdYFOkq+rvATBDjv/WvY0djB015fvykcKzGMKDe/rbRhogrHMzm7EaHaGQgBXHm23Oc9A==
+vulkava@^1.5.8:
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/vulkava/-/vulkava-1.5.8.tgz#ac9e0dde2d27bdfcce89f5771d2d7a9575f4a21f"
+  integrity sha512-ZWIxfKwLpwKuxb01BytFQQ2fvbe021L1k4g6npJUczUwygPOYoF70Ex+0GwylQjB95skBPzT0/CL3wKhBWqhsg==
   dependencies:
-    undici "^5.0.0"
-    ws "^8.5.0"
+    undici "^5.10.0"
+    ws "^8.8.1"
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
@@ -5047,11 +5047,6 @@ ws@^7.4.4:
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.5.tgz#8b4bc4af518cfabd0473ae4f99144287b33eb881"
   integrity sha512-BAkMFcAzl8as1G/hArkxOxq3G7pjUqQ3gzYbLL0/5zNkph70e+lCoxBGnm6AW1+/aiNeV4fnKqZ8m4GZewmH2w==
-
-ws@^8.5.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.6.0.tgz#e5e9f1d9e7ff88083d0c0dd8281ea662a42c9c23"
-  integrity sha512-AzmM3aH3gk0aX7/rZLYvjdvZooofDu3fFOzGqcSnQ1tOcTWwhM/o+q++E8mAyVVIyUdajrkzWUGftaVSDLn1bw==
 
 ws@^8.8.1:
   version "8.8.1"
