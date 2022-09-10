@@ -7,21 +7,14 @@ module.exports = {
         cooldown: 10,
         options: [{
             name: 'usuario',
-            type: 'STRING',
+            type: 'USER',
             description: 'User da pessoa',
             required: false,
         }],
     },
     run: async (client, message, args) => {
         const lan = await db.lgs.findOne({ guildID: message.user.id })
-        let id = message.options?.getString('user') ?? message.user.id
-        let membro = await client.users.fetch(id.replace(/[<@!>]/g, '')).catch(e => {
-            return null
-        })
-        if(!membro) return message.reply(`${client.user.username} - Erro \n Este usuário não existe.`)
-        membro = await message.guild.members.fetch(membro.id).catch(e => {
-            return null
-        })
+        let membro = message.options?.getMember('usuario') ?? message.user.id
         if(!membro) return message.reply(`${client.user.username} - Erro \n Este usuário não está no servidor.`)
         let casado = await db.coins.findOne({ casado1: membro.id })
         let tag = membro.user.tag
