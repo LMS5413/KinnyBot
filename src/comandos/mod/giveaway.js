@@ -70,13 +70,6 @@ module.exports = {
                         return collector.stop()
                     }
                 }
-                if (message.isCommand) {
-                    if (respostas.length > 4) return collector.stop()
-                    message.followUp(perguntas[respostas.length]).catch(error => console.log('Ocorreu erro 1' + error.message))
-                } else {
-                    if (respostas.length > 4) return collector.stop()
-                    msg.reply(perguntas[respostas.length]).catch(error => console.log('Ocorreu erro 2' + error.message))
-                }
             })
             collector.on('end', async (collected, reason) => {
                 if (termined) return;
@@ -85,7 +78,8 @@ module.exports = {
                     message.followUp('Esse canal não existe!')
                     return collector.stop()
                 }
-                let tempo = timeToMilliseconds(respostas[3])
+                let tempo = timeToMilliseconds(respostas[3].includes("h") && parseInt(respostas[3].replace("h", "")) >= 24 ? `${parseInt(respostas[3].replace("h", "")) / 24}h`:respostas[3])
+                if (!tempo) return message.channel.send('O tempo digitado é invalido')
                 const embed = new MessageEmbed()
                     .setColor('#9900f8')
                     .setTitle(`${respostas[0]}`)
