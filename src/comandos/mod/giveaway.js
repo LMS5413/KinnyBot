@@ -85,8 +85,8 @@ module.exports = {
                     message.followUp('Esse canal não existe!')
                     return collector.stop()
                 }
-                let tempo = timeToMilliseconds(respostas[3].includes("h") && parseInt(respostas[3].replace("h", "")) >= 24 ? `${parseInt(respostas[3].replace("h", "")) / 24}d`:respostas[3])
-                if (!tempo) return message.reply('Tempo inválido')
+                let tempo = timeToMilliseconds(respostas[3].includes("h") && parseInt(respostas[3].replace("h", "")) >= 24 ? `${~~(parseInt(respostas[3].replace("h", "")) / 24)}d`:respostas[3])
+                if (!tempo) return message.channel.send('Tempo inválido')
                 const embed = new MessageEmbed()
                     .setColor('#9900f8')
                     .setTitle(`${respostas[0]}`)
