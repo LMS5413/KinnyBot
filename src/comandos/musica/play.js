@@ -36,9 +36,9 @@ module.exports = {
         if (!voice) return message.reply('Você não está em um canal de voz!')
         if (message.options.getSubcommand() === "lavalink") {
             let player = client.manager.players.get(message.guild.id)
+            let search = await client.manager.search(message.options.getString('music'))
+            if (search.loadType === 'NO_MATCHES' || search.loadType === 'LOAD_FAILED') return message.reply('Nenhuma música encontrada!')
             if (player) {
-                let search = await client.manager.search(message.options.getString('music'))
-                if (search.loadType === 'NO_MATCHES' || search.loadType === 'LOAD_FAILED') return message.reply('Nenhuma música encontrada!')
                 if (search.loadType === "PLAYLIST_LOADED") {
                     search.tracks.forEach(track => {
                         player.queue.push(track)
@@ -69,11 +69,6 @@ module.exports = {
                     queue: new Queue()
                 })
                 player.connect()
-                let search = await client.manager.search(message.options.getString('music'))
-                if (search.loadType === 'NO_MATCHES' || search.loadType === 'LOAD_FAILED') {
-                    player.destroy()
-                    return message.reply('Nenhuma música encontrada!')
-                }
                 if (search.loadType === "PLAYLIST_LOADED") {
                     search.tracks.forEach(track => {
                         player.queue.push(track)

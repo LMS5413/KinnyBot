@@ -21,13 +21,13 @@ module.exports = {
                 const embed = new MessageEmbed()
                     .setColor('#9900f8')
                     .setTitle(`${client.user.username} - Cooldowns`)
-                    .addField('Daily', 'O k.daily foi liberado!')
-                    .addField('Daily', 'O k.daily foi liberado!')
-                    .addField('Apostar', 'O k.apostar foi liberado!')
-                    .addField('Cassino', 'O k.cassino foi liberado!')
-                    .addField('Roubar', 'O k.roubar foi liberado!')
-                    .addField('Work', 'O k.work foi liberado!')
-                    .addField('Multiplicador de koins', 'O k.mutiplier foi liberado!')
+                    .setFields([
+                        {name: 'Daily', value: 'O k.daily foi liberado!'},
+                        {name: 'Work', value: 'O k.work foi liberado!'},
+                        {name: 'Apostar', value: 'O k.apostar foi liberado!'},
+                        {name: 'Cassino', value: 'O k.cassino foi liberado!'},
+                        {name: 'Multiplicador de koins', value: 'O k.multiplier foi liberado!'},
+                    ])
                 message.reply({ embeds: [embed] })
             } else {
                 const timeout = 8.64e+7
@@ -45,12 +45,13 @@ module.exports = {
                 const embed = new MessageEmbed()
                     .setColor('#9900f8')
                     .setTitle(`${client.user.username} - Cooldowns`)
-                    .addField('Daily', tempo.milliseconds > 0 ? `Tempo restante **${tempo.hours} horas ${tempo.minutes} minutos ${tempo.seconds} segundos**` : 'O k.daily foi liberado!')
-                    .addField('Apostar', tempo2.milliseconds > 0 ? `Tempo restante **${tempo2.hours} horas ${tempo2.minutes} minutos ${tempo2.seconds} segundos**` : 'O k.apostar foi liberado!')
-                    .addField('Cassino', tempo3.milliseconds > 0 ? `Tempo restante **${tempo3.hours} horas ${tempo3.minutes} minutos ${tempo3.seconds} segundos**` : 'O k.cassino foi liberado!')
-                    .addField('Roubar', tempo4.milliseconds > 0 ? `Tempo restante **${tempo4.hours} horas ${tempo4.minutes} minutos ${tempo4.seconds} segundos**` : 'O k.roubar foi liberado!')
-                    .addField('Multiplicador de koins', tempo5.milliseconds > 0 ? `Tempo restante **${tempo5.days} Dias ${tempo5.hours} horas ${tempo5.minutes} minutos ${tempo5.seconds} segundos**` : 'O k.mutiplier foi liberado!')
-                    .addField('Work', tempo6.milliseconds > 0 ? `Tempo restante **${tempo6.hours} horas ${tempo6.minutes} minutos ${tempo6.seconds} segundos**` : 'O k.work foi liberado!')
+                    .setFields([
+                        {name: 'Daily', value: tempo.milliseconds > 0 ? `O k.daily será liberado em ${tempo.hours}h ${tempo.minutes}m ${tempo.seconds}s`: 'O k.daily foi liberado!'},
+                        {name: 'Work', value: tempo6.milliseconds > 0 ? `O k.work será liberado em ${tempo6.minutes}m ${tempo6.seconds}s`: 'O k.work foi liberado!'},
+                        {name: 'Apostar', value: tempo2.milliseconds > 0 ? `O k.apostar será liberado em ${tempo2.minutes}m ${tempo2.seconds}s`: 'O k.apostar foi liberado!'},
+                        {name: 'Cassino', value: tempo3.milliseconds > 0 ? `O k.cassino será liberado em ${tempo3.minutes}m ${tempo3.seconds}s`: 'O k.cassino foi liberado!'},
+                        {name: 'Multiplicador de koins', value: tempo5.milliseconds > 0 ? `O k.multiplier será liberado em ${tempo5.hours}h ${tempo5.minutes}m ${tempo5.seconds}s`: 'O k.multiplier foi liberado!'},
+                    ])
                 message.reply({ embeds: [embed] })
             }
         }

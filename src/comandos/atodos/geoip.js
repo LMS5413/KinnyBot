@@ -24,7 +24,7 @@ module.exports = {
    if(infoip.status === 'success') {
    const embed = new MessageEmbed()
    .setColor('#9900f8')
-   .addField(`${client.user.username} - GEO IP`, lan && lan.lang === 'en' ? streua:strbr)
+   .setFields([{name: `${client.user.username} - GEO IP`, value: lan && lan.lang === 'en' ? streua:strbr}])
    return message.reply({embeds: [embed]})
    }
   })

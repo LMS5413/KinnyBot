@@ -19,7 +19,6 @@ module.exports = async client => {
                     .setTitle(xy.title)
                     .setDescription(`Sorteio encerrado! Vencedor anunciado embaixo!\n\nOBS: Caso o dono do sorteio não entregar o que prometeu denuncie para ao LMS5413!`)
                     .setFooter({ text: `Sorteio encerrado!` });
-
                 let channel = await client.channels.fetch(xy.channel).catch(() => {
                     return null;
                 });

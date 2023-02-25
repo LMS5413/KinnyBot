@@ -16,7 +16,7 @@
     "canvas": "^2.8.0",
     "colors.js": "^1.2.4",
     "dicionario.js": "^1.0.7",
-    "discord.js": "13.10.2",
+    "discord.js": "13.12.0",
     "epic-free-games": "^2.1.4",
     "express": "^4.17.1",
     "fastest-levenshtein": "^1.0.12",
