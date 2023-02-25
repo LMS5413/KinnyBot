@@ -26,7 +26,7 @@ module.exports = {
         if(message.options.getInteger('number') && message.options.getInteger('number') > player.queue.length) return message.reply('Não há músicas na fila!')
         if(player.trackRepeat || player.queueRepeat) return message.reply('Você não pode pular músicas enquanto estiver em loop!')
         if(message.options.getInteger('number') && message.options.getInteger('number') > player.queue.length) returnmessage.reply('Você não pode quantidade de música mais alto que da sua lista de música')
-        player.skip(message.options.getInteger('number') ?? 1)
+        player.skip(message.options.getInteger('number'))
         message.reply('Música pulada!')
     }
 }
