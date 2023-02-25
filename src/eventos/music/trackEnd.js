@@ -11,6 +11,6 @@ module.exports = (client, player, track) => {
 
     if (!track) return player.destroy();
     channel.send({ embeds: [embed] }).then(() => {
-        player.destroy();
+        if (!player.queue.peek().length) player.destroy();
     });
 };
